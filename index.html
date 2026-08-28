@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Turning Thirty — Tarot Deck</title>
-<meta name="description" content="How to read the Turning Thirty tarot deck. 22 Major Arcana cards, designed and illustrated by Sogol Mahzoun.">
+<title>سی سالگی — دک تاروت</title>
+<meta name="description" content="راهنمای خواندن دک تاروت «سی سالگی». ۲۲ کارت آرکانای بزرگ، طراحی و تصویرسازی سوگل محزون.">
 <meta name="theme-color" content="#E9E4D8">
 
 <!-- Open Graph, so the link looks right when shared -->
@@ -68,13 +68,14 @@ body::after{
 .lang{
   position:fixed; top:1rem; inset-inline-end:1rem; z-index:60;
   display:flex; border:2px solid var(--ink); background:var(--cream);
-  font-family:var(--label); font-size:.72rem; letter-spacing:.1em;
-  box-shadow:3px 3px 0 var(--ink);
+  font-family:var(--label); font-size:.82rem; letter-spacing:.08em;
+  box-shadow:4px 4px 0 var(--ink);
 }
 .lang button{
   appearance:none; border:0; background:transparent; cursor:pointer;
-  padding:.4rem .7rem; font:inherit; color:var(--ink);
+  padding:.5rem .85rem; font:inherit; color:var(--ink);
 }
+.lang button[data-set="fa"]{ font-family:var(--body); font-weight:700; letter-spacing:0; }
 .lang button[aria-pressed="true"]{ background:var(--ink); color:var(--red); }
 .lang button + button{ border-inline-start:2px solid var(--ink); }
 .lang button:focus-visible{ outline:3px solid var(--red); outline-offset:2px; }
@@ -316,13 +317,14 @@ footer a{ color:var(--red); text-decoration:none; border-bottom:1px solid rgba(2
 <body>
 
 <div class="lang" role="group" aria-label="Language">
-  <button type="button" data-set="en" aria-pressed="true">EN</button>
-  <button type="button" data-set="fa" aria-pressed="false">فا</button>
+  <button type="button" data-set="fa" aria-pressed="true">فارسی</button>
+  <button type="button" data-set="en" aria-pressed="false">EN</button>
 </div>
 
 <noscript>
   <div style="padding:2rem;text-align:center">
-    <h1>Turning Thirty — Tarot Deck</h1>
+    <h1>سی سالگی — دک تاروت</h1>
+    <p>برای دیدن راهنما، جاوااسکریپت مرورگر را روشن کنید.</p>
     <p>Enable JavaScript to read the guide.</p>
   </div>
 </noscript>
@@ -672,7 +674,8 @@ document.querySelector('.lang').addEventListener('click',e=>{
   const b=e.target.closest('button'); if(b) render(b.dataset.set);
 });
 
-render(navigator.language && navigator.language.toLowerCase().startsWith('fa') ? 'fa' : 'en');
+/* Persian is the default. Change 'fa' to 'en' here to flip it. */
+render('fa');
 </script>
 </body>
 </html>
