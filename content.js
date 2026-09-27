@@ -272,14 +272,14 @@ const T = {
   cardN:n=>`کارت ${["اول","دوم","سوم","چهارم"][n]}`,
   tapToFlip:"برگرداندن کارت",
 
-  whatEyebrow:"۰۱", whatTitle:"تاروت چیست؟",
+  whatEyebrow:"", whatTitle:"تاروت چیست؟",
   what:[
    "تاروت یک دستهٔ ۷۸کارتی است که هر کارتش تصویر و نمادهای خاص خودش را دارد. این کارت‌ها امروزه بیشتر برای سرگرمی، فال و داستان‌گویی استفاده می‌شوند.",
    "تاروت در ابتدا برای فال ساخته نشده بود؛ قدیمی‌ترین نمونه‌هایش در ایتالیای قرن پانزدهم برای یک بازی کارتی استفاده می‌شدند و ارتباط تاروت با فال‌گیری چند قرن بعد شکل گرفت. بعضی از کارت‌های قدیمی حتی با دست نقاشی و با ورق طلا تزئین شده بودند.",
    "یک دستهٔ تاروت شامل ۲۲ کارت <b>آرکانای کبیر</b> (Major Arcana) و ۵۶ کارت <b>آرکانای صغیر</b> (Minor Arcana) است."
   ],
 
-  cardsEyebrow:"۰۲", cardsTitle:"کارت‌های تاروت",
+  cardsEyebrow:"", cardsTitle:"کارت‌های تاروت",
   majorTitle:"آرکانای کبیر", majorEn:"Major Arcana",
   majorText:"۲۲ کارت که هر کدام یک مضمون بزرگ زندگی را نشان می‌دهند. هر کارت یک معنی مستقیم دارد و یک معنی وارونه.",
   minorTitle:"آرکانای صغیر", minorEn:"Minor Arcana",
@@ -300,11 +300,11 @@ const T = {
   builderOpen:"دیدن معنی کامل کارت",
   combo:(r,s)=>`${r} + ${s}`,
 
-  spreadsEyebrow:"۰۳", spreadsTitle:"چیدمان‌ها",
+  spreadsEyebrow:"", spreadsTitle:"چیدمان‌ها",
   tryIt:"همین فال را بگیر",
   orSpecific:"یا اگر سؤال مشخص‌تری داری:",
 
-  howEyebrow:"۰۴", howTitle:"چطور کار می‌کند؟",
+  howEyebrow:"", howTitle:"چطور کار می‌کند؟",
   howLead:"برای تفسیر یک کارت:",
   how:[
    "سؤال خودت را یادت بیاور.",
@@ -315,7 +315,7 @@ const T = {
   ],
   howLast:"و مهم‌تر از همه: تاروت قرار نیست به‌جای تو تصمیم بگیرد. از آن برای سرگرمی و دیدن از یک زاویهٔ تازه استفاده کن.",
 
-  aboutEyebrow:"۰۵", aboutTitle:"دربارهٔ تاروت سی‌سالگی",
+  aboutEyebrow:"", aboutTitle:"دربارهٔ تاروت سی‌سالگی",
   about:"این آخرین چیزی است که در دههٔ بیست‌سالگی‌ام ساختم. لازم بود این فصل را با تمام کردن چیزی ترک کنم. این دسته کارت خداحافظی من با بیست‌ونه شد و اولین قدمم به سی. اگر الان دستت گرفته‌ای، در تکه‌ای کوچک از آن مسیر با من همراه شده‌ای.",
   sig:"— سوگل محزون",
   footer:"طراحی و تصویرسازی: سوگل محزون"
@@ -335,14 +335,14 @@ const T = {
   cardN:n=>`Card ${n+1}`,
   tapToFlip:"Turn card over",
 
-  whatEyebrow:"01", whatTitle:"What is tarot?",
+  whatEyebrow:"", whatTitle:"What is tarot?",
   what:[
    "Tarot is a deck of 78 cards, each with its own image and symbols. Today the cards are mostly used for fun, fortune-telling and storytelling.",
    "Tarot wasn't made for fortune-telling at first. The oldest decks were used in fifteenth-century Italy for a card game, and the link between tarot and divination only formed a few centuries later. Some of the old cards were even hand-painted and decorated with gold leaf.",
    "A tarot deck has 22 <b>Major Arcana</b> cards and 56 <b>Minor Arcana</b> cards."
   ],
 
-  cardsEyebrow:"02", cardsTitle:"The cards",
+  cardsEyebrow:"", cardsTitle:"The cards",
   majorTitle:"Major Arcana", majorEn:"",
   majorText:"22 cards, each showing one of life's big themes. Every card has an upright meaning and a reversed one.",
   minorTitle:"Minor Arcana", minorEn:"",
@@ -363,11 +363,11 @@ const T = {
   builderOpen:"Read the full card",
   combo:(r,s)=>`${r} + ${s}`,
 
-  spreadsEyebrow:"03", spreadsTitle:"Spreads",
+  spreadsEyebrow:"", spreadsTitle:"Spreads",
   tryIt:"Try this spread",
   orSpecific:"Or, if you have a more specific question:",
 
-  howEyebrow:"04", howTitle:"How does it work?",
+  howEyebrow:"", howTitle:"How does it work?",
   howLead:"To read a card:",
   how:[
    "Remember your question.",
@@ -378,7 +378,7 @@ const T = {
   ],
   howLast:"And most importantly: tarot isn't here to make decisions for you. Use it for fun, and for seeing things from a fresh angle.",
 
-  aboutEyebrow:"05", aboutTitle:"About Turning Thirty",
+  aboutEyebrow:"", aboutTitle:"About Turning Thirty",
   about:"This is the last thing I created in my twenties. I needed to leave this chapter by finishing something that truly mattered to me. This deck became my farewell to 29 and my first step into 30. If you're holding it now, you're holding a small piece of that journey.",
   sig:"— Sogol Mahzoun",
   footer:"Designed & illustrated by Sogol Mahzoun"

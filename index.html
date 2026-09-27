@@ -74,7 +74,7 @@ b,strong{font-weight:700}
 
 /* ---------- headings + the deck's red strike ---------- */
 h1,h2,h3{font-weight:400;margin:0;line-height:1.1}
-h1{font-family:var(--display);font-size:clamp(2.5rem,11vw,4.6rem)}
+h1{font-family:var(--display);font-size:clamp(2.5rem,11vw,4.6rem);white-space:nowrap}
 h2{font-family:var(--display);font-size:clamp(1.7rem,6.5vw,2.5rem)}
 html[lang="fa"] h1{font-family:var(--fa-display);font-size:clamp(3rem,13vw,5.2rem);line-height:1.3}
 html[lang="fa"] h2{font-family:var(--fa-display);font-size:clamp(2rem,7.5vw,2.8rem);line-height:1.45}
@@ -392,7 +392,7 @@ function dealCards(){
 }
 
 /* ---------- small renderers ---------- */
-const head = (eb, txt) => `<div class="sec-head"><span class="eyebrow">${eb}</span><h2 class="strike">${esc(txt)}<span></span></h2></div>`;
+const head = (eb, txt) => `<div class="sec-head">${eb ? `<span class="eyebrow">${eb}</span>` : ''}<h2 class="strike">${esc(txt)}<span></span></h2></div>`;
 const cardName = (c, lang) => c[lang].name;
 const cardSub = c => c.en.name;
 
@@ -468,7 +468,7 @@ function libList(){
 }
 function libTabsHTML(){
   const t = T[state.lang], lang = state.lang;
-  const tabs = [['major', t.tabMajor], ...SUIT_ORDER.map(s => [s, lang === 'fa' ? `${SUITS[s].fa.name} · ${SUITS[s].en.name}` : SUITS[s].en.name])];
+  const tabs = [['major', lang === 'fa' ? `${t.tabMajor} · Major` : t.tabMajor], ...SUIT_ORDER.map(s => [s, lang === 'fa' ? `${SUITS[s].fa.name} · ${SUITS[s].en.name}` : SUITS[s].en.name])];
   return tabs.map(([k, l]) => `<button class="chip" data-lib="${k}" aria-pressed="${k === state.lib}">${esc(l)}</button>`).join('');
 }
 function suitLine(){
