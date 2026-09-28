@@ -272,6 +272,19 @@ const T = {
   cardN:n=>`کارت ${["اول","دوم","سوم","چهارم"][n]}`,
   tapToFlip:"برگرداندن کارت",
 
+  sum:{
+   title:"جمع‌بندی",
+   oneMajor:"کارتت از <b>آرکانای کبیر</b> است؛ یعنی پیامش دربارهٔ یک مضمون بزرگ در زندگی توست، نه فقط یک اتفاق روزمره. جدی‌اش بگیر.",
+   oneMinor:(re,rm,se,sm)=>`کارتت از <b>آرکانای صغیر</b> است و با فرمول «عدد + دسته» هم می‌شود خواندش: <b><bdi>${re}</bdi></b> یعنی ${rm}، و <b><bdi>${se}</bdi></b> یعنی ${sm}.`,
+   oneRev:"کارت وارونه آمده؛ یعنی انرژی‌اش شاید گیر کرده، دیر رسیده یا بیشتر درونی است.",
+   allMajor:"همهٔ کارت‌ها از <b>آرکانای کبیر</b> آمده‌اند؛ این موقعیت بزرگ‌تر از یک اتفاق ساده است و می‌تواند یک نقطهٔ عطف باشد.",
+   someMajor:(m,n)=>`${m} کارت از ${n} کارت از <b>آرکانای کبیر</b> است؛ این کارت‌ها وزن بیشتری دارند و مضمون اصلی داستان را نشان می‌دهند.`,
+   noMajor:"همهٔ کارت‌ها از <b>آرکانای صغیر</b> هستند؛ موضوع بیشتر به زندگی روزمره و انتخاب‌های خودت مربوط است و دستت برای تغییرش باز است.",
+   suit:(k,se,sm)=>`${k} کارت از دستهٔ <b><bdi>${se}</bdi></b> آمده؛ پس تمرکز این فال روی ${sm} است.`,
+   manyRev:"بیشتر کارت‌ها وارونه آمده‌اند؛ شاید چیزی گیر کرده، عقب افتاده یا باید اول درونت حلش کنی.",
+   noRev:"هیچ کارتی وارونه نیامده؛ انرژی‌ها روان‌اند و راه نسبتاً باز است."
+  },
+
   whatEyebrow:"", whatTitle:"تاروت چیست؟",
   what:[
    "تاروت یک دستهٔ ۷۸کارتی است که هر کارتش تصویر و نمادهای خاص خودش را دارد. این کارت‌ها امروزه بیشتر برای سرگرمی، فال و داستان‌گویی استفاده می‌شوند.",
@@ -334,6 +347,19 @@ const T = {
   storyNote:"Now look at the cards together. Each card doesn't need its own separate answer — side by side, they tell a story.",
   cardN:n=>`Card ${n+1}`,
   tapToFlip:"Turn card over",
+
+  sum:{
+   title:"SUMMARY",
+   oneMajor:"Your card is from the <b>Major Arcana</b>: its message is about one of life's big themes, not just an everyday event. Take it seriously.",
+   oneMinor:(re,rm,se,sm)=>`Your card is from the <b>Minor Arcana</b>, so you can also read it as number + suit: <b>${re}</b> means ${rm}, and <b>${se}</b> means ${sm}.`,
+   oneRev:"It came up reversed: its energy may be blocked, delayed, or turned inward.",
+   allMajor:"Every card is from the <b>Major Arcana</b>. This is bigger than a passing moment; it may be a turning point.",
+   someMajor:(m,n)=>`${m} of ${n} cards are from the <b>Major Arcana</b>. They carry more weight and point to the main theme of the story.`,
+   noMajor:"All the cards are from the <b>Minor Arcana</b>. This is mostly about everyday life and your own choices, and you have room to change it.",
+   suit:(k,se,sm)=>`${k} cards are ${se}, so this reading is focused on ${sm}.`,
+   manyRev:"Most cards came up reversed. Something may be stuck or delayed, or needs working out inside first.",
+   noRev:"No card came up reversed. The energy is flowing and the way is fairly open."
+  },
 
   whatEyebrow:"", whatTitle:"What is tarot?",
   what:[
